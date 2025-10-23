@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Academic journal</title>
+    <title>Library | Academic Jorunal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/nav-logo.png" type="img/png">
 </head>
-<body>
+<body style="display: flex; flex-direction: column; justify-content: space-between;">
     <header>
         <div class="nav-top">
             <h1>Academic journal</h1>
@@ -30,38 +30,16 @@
         </div>
     </header>
     <main>
-        <div class="main-all-submission">
-            <div class="main-students">
-                <h1>Academic journal</h1>
-                <a href="submissions.html">
-                    <button>Submit Paper</button>
-                </a>
-            </div>
-        </div>
-        <div class="hr-text-contacts">
-            <span>Contacts</span>
-        </div>
-        <div class="main-all-contacts">
-            <div class="main-contacts">
-                <h1>Contact Us</h1>
-                <p>Almaty, Kazakhstan</p>
-                <p>example@mail.com</p>
-            </div>
-            <div class="main-img"></div>
-        </div>
-        <div class="hr-text-contacts">
-            <span>Library</span>
-        </div>
-        <div class="main-library-home">
-            <div class="main-library-home-info">
+        <div class="library-all">
+            <div class="main-library-title">
                 <h1>Library</h1>
-                <form action="library.html">
-                    <button class="follow-button">Follow</button>
-                </form>
+                <p style="color: rgba(66, 66, 66, 0.8);">Book search</p>
             </div>
-            <div class="library-img"></div>
-        </div>
-
+            <div class="main-library-search">
+                <input type="text" name="search" id="library-search" placeholder="Enter title or author">
+                <button id="btn-search">Search</button>
+            </div>
+            <div class="main-library-booklist"></div>
         </div>
     </main>
     <footer>
@@ -75,5 +53,7 @@
             <p>Almaty, Kazakhstan, 050000</p>
         </div>
     </footer>
+    
+    <script src="library.js"></script>
 </body>
 </html>
