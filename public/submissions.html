@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions | Academic journal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/nav-logo.png" type="img/png">
+</head>
+<body>
+    <header>
+        <div class="nav-top">
+            <h1>Academic journal</h1>
+            <img src="img/nav-logo.png" alt="logo" class="nav-logo">
+        </div>
+        <hr style="border: 1px solid white;">
+        <div class="nav-bottom">
+            <a href="index.html">
+                <button>Home</button>
+            </a>
+            <a href="pastissues.html">
+                <button>Past isssues</button>
+            </a>
+            <a href="submissions.html">
+                <button>Submissions</button>
+            </a>
+            <a href="library.html">
+                <button>Library</button>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="main-submissions-info">
+            <div class="main-submissions-img"></div>
+            <div class="main-submissions-text">
+                <p>We accept submissions exclusively from middle school, high school, and undergraduate students. The Journal welcomes all types of scholarly writing, including but not limited to research papers, review articles, and works in the humanities and social sciences. Issues are published monthly. Authors can generally expect to receive a response from the Journal within two to five weeks.</p>
+                <p>When submitting your paper, please ensure that it follows proper MLA citation guidelines, including in-text citations where applicable. Submissions should be provided as a link to a Google Document. Make sure that the Academic Journal’s email has full access to view and edit the document. The maximum length for submissions is 20 pages (1.15 line spacing, Times New Roman, font size 12), excluding the works cited section. We recommend reviewing the Example Article for detailed formatting guidance, as correctly formatted papers help streamline the publication process. After submission, each manuscript undergoes a peer-review process, during which two editors independently evaluate the paper to determine its suitability for publication. Every submission is carefully reviewed for academic integrity, factual accuracy, and grammatical precision. Once both editors reach their conclusions, they collaborate to decide on acceptance or rejection. We review submissions on a rolling basis, so authors are welcome to submit their papers at any time once they are complete.</p>
+                <p>To submit a paper for consideration, please complete the submission form below and you will receive a confirmation email.</p>
+            </div>
+        </div>
+        <div class="main-submissions-form-text">
+            <p>Manuscript submission form</p>
+            <p style="font-size: 17px; margin-top: 10px; color: rgba(34, 34, 34, 0.7); font-weight: lighter;">To Submit a paper, please fill out the form below.</p>
+        </div>
+        <div class="main-submissions-form">
+            <form id="submissionForm">
+                <div>
+                    <label>First Name*</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+
+                <div>
+                    <label>Last Name*</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+
+                <div>
+                    <label>Age</label>
+                    <input type="text" name="age" id="age">
+                </div>
+
+                <div>
+                    <label>Grade</label>
+                    <input type="text" name="grade" id="grade">
+                </div>
+
+                <div>
+                    <label>School name</label>
+                    <input type="text" name="school" id="school">
+                </div>
+
+                <div>
+                    <label for="pathway">Publication Pathway *</label>
+                    <select id="pathway" name="pathway" id="pathway" required>
+                        <option value="">Select an option</option>
+                        <option value="Fast-Track Review">Fast-Track Review</option>
+                        <option value="Seasonal Review">Seasonal Review</option>
+                        <option value="Regular Submission">Regular Submission</option>
+                        <option value="Special Issue">Special Issue</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Email *</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div>
+                    <label>Affiliations</label>
+                    <input type="text" name="affiliations" id="affiliations" placeholder="If none write N/A">
+                </div>
+
+                <div class="full-width">
+                    <label>Google Document link *</label>
+                    <input type="url" name="googleDoc" id="googleDoc" required>
+                </div>
+
+                <div class="full-width">
+                    <label>Additional comments</label>
+                    <textarea name="comments" rows="4" id="comments"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contacts">
+            <p style="font-weight: bold;">Contact Us</p>
+            <p>Email: <span style="font-weight: bold;">nesuxjournal25@email.com</span></p>
+            <p>Follow in Instagram: <span style="font-weight: bold;">@nexusaj25</span></p>
+        </div>
+        <div class="footer-address">
+            <p style="font-weight: bold;">Terenozek, 47</p>
+            <p>Almaty, Kazakhstan, 050000</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
